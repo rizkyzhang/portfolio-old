@@ -1,0 +1,21 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* Theme */
+
+:root[theme='dark'] {
+  --primary-color: #282828;
+  --secondary-color: #2d2d2d;
+  --accent: #2ca5e0;
+  --text-color: #c4c4c4;
+}
+
+:root[theme='light'] {
+  --primary-color: #fff;
+  --secondary-color: #eeeeee;
+  --accent: #2ca5e0;
+  --text-color: #555;
+}
