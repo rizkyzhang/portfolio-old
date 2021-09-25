@@ -52,3 +52,36 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  padding: 2rem;
+
+  background: var(--primary-color);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link,
+.nav__theme {
+  transition: color 0.5s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__theme:hover {
+  color: var(--accent-color);
+}
+
+.drop-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 18px;
+}
