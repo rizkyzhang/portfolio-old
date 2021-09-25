@@ -31,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <main id="top">
         <section class="home">
             <h1 class="home__title">Hi, I am Rizky.</h1>
@@ -94,6 +94,85 @@
                     </a>
                 </li>
             </ul>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="skills__title">Skills</h2>
+            <pre class="skill">
+                <code class="language-js">
+class FullStack {
+    constructor(frontEnd, backEnd) {
+        this.frontEnd = frontEnd;
+        this.backEnd = backEnd;
+    }
+        
+    get frontEnd() {
+        return this.frontEnd;
+    }
+        
+    set frontEnd(frontEnd) {
+        this.frontEnd = frontEnd;
+    }
+        
+    get backEnd() {
+        return this.backEnd;
+    }
+        
+    set backEnd() {
+        this.backEnd = backEnd;
+    }
+}
+        
+const frontEnd = [
+    "HTML",
+    "CSS",
+    "Bootstrap"
+    "JavaScript",
+    "React"
+];
+        
+const backEnd = [
+    "Node.js",
+    "Express"
+    "Python",
+    "PHP",
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+];
+        
+const fullStack = new FullStack(frontEnd, backEnd);
+console.log(fullStack.frontEnd);
+console.log(fullStack.backEnd);
+                </code>
+            </pre>
+            <pre class="skill">
+                <code class="language-python">
+class Tools:
+    def __init__(self, tools):
+        self.tools = tools
+        
+        def get_tools(self):
+            return self.tools
+        
+        def set_tools(self, tools):
+            self.tools = tools
+        
+    tools = Tools([
+        "Github",
+        "Linux",
+        "Vim",
+        "VS Code",
+        "Webpack",
+        "NPM",
+        "Termux",
+        "Postman",
+        "Insomnia"
+    ])
+        
+    print(tools.get_tools())
+                </code>
+            </pre>
         </section>
     </main>
 
