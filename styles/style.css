@@ -9,13 +9,46 @@
 :root[theme='dark'] {
   --primary-color: #282828;
   --secondary-color: #2d2d2d;
-  --accent: #2ca5e0;
+  --accent-color: #2ca5e0;
   --text-color: #c4c4c4;
 }
 
 :root[theme='light'] {
   --primary-color: #fff;
   --secondary-color: #eeeeee;
-  --accent: #2ca5e0;
+  --accent-color: #2ca5e0;
   --text-color: #555;
+}
+
+/* General styling */
+
+body {
+  background: var(--primary-color);
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-family: Poppins;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main,
+.home,
+.skills {
+  margin-bottom: 10rem;
+}
+
+.skills__title,
+.projects__title {
+  margin-bottom: 2rem;
+}
+
+.skill,
+.project,
+footer {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
