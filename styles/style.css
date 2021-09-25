@@ -155,7 +155,7 @@ footer {
 }
 
 .home__cv {
-  background: var(--accent);
+  background: var(--accent-color);
 }
 
 .contacts__item:not(:last-of-type) {
@@ -259,7 +259,7 @@ hr {
   width: 50%;
   padding: 1rem;
 
-  background: var(--accent);
+  background: var(--accent-color);
 
   color: white;
 }
@@ -320,4 +320,23 @@ footer {
   .nav__item:not(:last-of-type) {
     margin-right: 5rem;
   }
+}
+
+/* Scroll Top */
+
+.scroll-top {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999; /* Make sure it does not overlap */
+
+  width: 50px;
+  padding: 15px;
+
+  background: var(--accent-color);
+  color: white;
+  cursor: pointer;
 }
