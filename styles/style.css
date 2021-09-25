@@ -300,3 +300,24 @@ footer {
   color: #222;
   font-family: Inconsolata, sans-serif;
 }
+
+/* Media Query */
+
+@media (min-width: 500px) {
+  .home__contacts {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: auto;
+    gap: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav__item:first-of-type {
+    margin-left: auto;
+  }
+
+  .nav__item:not(:last-of-type) {
+    margin-right: 5rem;
+  }
+}
