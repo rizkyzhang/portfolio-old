@@ -98,47 +98,47 @@
             <h2 class="skills__title">Skills</h2>
             <pre class="skill">
                 <code class="language-js">
-class FullStack {
-    constructor(frontEnd, backEnd) {
+class GeneralSkills {
+    constructor(frontEnd, data) {
         this.frontEnd = frontEnd;
-        this.backEnd = backEnd;
+        this.data = data;
     }
-        
+
     get frontEnd() {
         return this.frontEnd;
     }
-        
+
     set frontEnd(frontEnd) {
         this.frontEnd = frontEnd;
     }
-        
-    get backEnd() {
-        return this.backEnd;
+
+    get data() {
+        return this.data;
     }
-        
-    set backEnd() {
-        this.backEnd = backEnd;
+
+    set data(data) {
+        this.data = data;
     }
 }
-        
+
 const frontEnd = [
     "HTML",
     "CSS",
-    "Bootstrap"
+    "Bootstrap",
     "JavaScript ES6",
-    "Web Components"
-    "React.js",
+    "Web Components",
 ];
-        
-const backEnd = [
-    "Node.js",
+
+const data = [
     "Python",
+    "Google Colab",
+    "BeautifulSoup",
     "MySQL"
 ];
-        
-const fullStack = new FullStack(frontEnd, backEnd);
-console.log(fullStack.frontEnd);
-console.log(fullStack.backEnd);
+
+const generalSkills = new GeneralSkills(frontEnd, data);
+console.log(generalSkills.frontEnd);
+console.log(generalSkills.data);
                 </code>
             </pre>
             <pre class="skill">
@@ -155,13 +155,14 @@ class Tools:
         
     tools = Tools([
         "Github",
+        "Webpack",
+        "NPM",
+        "Postman",
+        "Netlify",
         "Linux",
         "Vim",
         "VS Code",
-        "Webpack",
-        "NPM",
-        "Termux",
-        "Postman",
+        "Termux (Android Terminal Emulator)"
     ])
         
     print(tools.get_tools())
