@@ -177,20 +177,27 @@ class Tools:
                     <img src="images/covid19-radar.png" alt="Project photo" class="project__photo">
                     <p class="project__description">
                         A COVID-19 dashboard application consisting of worldwide and Indonesia COVID-19 stats,
-                        timeline chart, live cases and prevention tips in an easy to use UI.
+                        timeline chart, live cases and prevention tips in an easy to use UI. It is build with
+                        the power of web components which make it easy to scale and maintenance as the UI
+                        is consisted of multiple components.
                     </p>
-                    <hr>
-                    <ul role="list" class="project__techs">
-                        <li class="techs__item">HTML</li>
-                        <li class="techs__item">CSS</li>
-                        <li class="techs__item">JavaScript</li>
-                        <li class="techs__item">Webpack</li>
-                        <li class="techs__item">NPM</li>
-                        <li class="techs__item">Chart.js</li>
-                        <li class="techs__item">ky</li>
-                        <li class="techs__item">API</li>
-                    </ul>
-                    <hr>
+
+                    <div class="techs-wrapper">
+                        <hr>
+                        <ul role="list" class="project__techs">
+                            <li class="techs__item">HTML</li>
+                            <li class="techs__item">CSS</li>
+                            <li class="techs__item">JavaScript</li>
+                            <li class="techs__item">Web Components</li>
+                            <li class="techs__item">COVID-19 API</li>
+                            <li class="techs__item">Webpack</li>
+                            <li class="techs__item">NPM</li>
+                            <li class="techs__item">Chart.js</li>
+                            <li class="techs__item">ky</li>
+                        </ul>
+                        <hr>
+                    </div>
+
                     <div class="project__links">
                         <a href="https://covid19radar.netlify.app" class="project__link">
                             <i aria-hidden="true" class="link__icon fas fa-eye"></i>
@@ -206,19 +213,86 @@ class Tools:
                     <h3 class="project__title">Yahoo Finance LQ45 Scraper</h3>
                     <img src="images/lq45-sql.png" alt="Project photo" class="project__photo">
                     <p class="project__description">
-                        A program that scrape LQ45 stock list from kontan.co.id, then using it to fetch historical stocks data from yfinance API
-                        and finally save the data to remote MySQL server. The historical data can be used for data analysis.
+                        A web scraper that scrape LQ45 stock list from kontan.co.id, then using it to fetch historical stocks data from yfinance API
+                        and finally save the data to remote MySQL server. The historical data can then be used for data analysis.
                     </p>
-                    <hr>
-                    <ul role="list" class="project__techs">
-                        <li class="techs__item">Python</li>
-                        <li class="techs__item">BeautifulSoup</li>
-                        <li class="techs__item">yfinance</li>
-                        <li class="techs__item">MySQL</li>
-                    </ul>
-                    <hr>
+
+                    <div class="techs-wrapper">
+                        <hr>
+                        <ul role="list" class="project__techs">
+                            <li class="techs__item">Python</li>
+                            <li class="techs__item">BeautifulSoup</li>
+                            <li class="techs__item">yfinance</li>
+                            <li class="techs__item">MySQL</li>
+                        </ul>
+                        <hr>
+                    </div>
 
                     <a href="https://colab.research.google.com/drive/14hbTQJIVPixBe_6JODN_YUNNljkgfaTs" class="project__link full-width">
+                        <i aria-hidden="true" class="link__icon fas fa-eye"></i>
+                        <span class="link__text">View</span>
+                    </a>
+                </section>
+                <section class="project">
+                    <h3 class="project__title">Football Radar</h3>
+                    <img src="images/football-radar.png" alt="Project photo" class="project__photo">
+                    <p class="project__description">
+                        A Progressive Web Application that shows football informations. The UI is built using Materialize CSS.
+                        As a PWA, it is capable of working in offline mode by using previously stored cache.
+                        Another notable feature is ability to store data in IndexedDB storage, as seen with the favorite team feature. 
+                        It is also able to send push message from the server via Firebase Cloud Messaging integration.
+                    </p>
+
+                    <div class="techs-wrapper">
+                        <hr>
+                        <ul role="list" class="project__techs">
+                            <li class="techs__item">HTML</li>
+                            <li class="techs__item">CSS</li>
+                            <li class="techs__item">Materialize CSS</li>
+                            <li class="techs__item">JavaScript ES6</li>
+                            <li class="techs__item">Web APIs</li>
+                            <li class="techs__item">IndexedDB</li>
+                            <li class="techs__item">Service Worker</li>
+                            <li class="techs__item">Workbox</li>
+                            <li class="techs__item">Firebase Cloud Messaging</li>
+                            <li class="techs__item">Snowpack</li>
+                        </ul>
+                        <hr>
+                    </div>
+                
+                    <div class="project__links">
+                        <a href="https://footballradar.netlify.app/" class="project__link">
+                            <i aria-hidden="true" class="link__icon fas fa-eye"></i>
+                            <span class="link__text">View</span>
+                        </a>
+                        <a href="https://github.com/rizkyzhang/football-radar" class="project__link">
+                            <i class="link__icon fab fa-github"></i>
+                            <span class="link__text">Github</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <h3 class="project__title">Promo Scraper</h3>
+                    <img src="images/promo-scraper.png" alt="Project photo" class="project__photo">
+
+                    <p class="project__description">
+                        A web scraper that scrape promo informations like cashback for several websites such as Ajaib, Bibit and Line Bank.
+                        The purpose of this project is to help to gain promo informations faster without having to manually find the promo.
+                        The output is delivered in a clean and human readable format.
+                    </p>
+                    
+                    <div class="techs-wrapper">
+                        <hr>
+                        <ul role="list" class="project__techs">
+                            <li class="techs__item">Python</li>
+                            <li class="techs__item">requests</li>
+                            <li class="techs__item">BeautifulSoup</li>
+                        </ul>
+                        <hr>
+                    </div>
+
+                    <a href="https://colab.research.google.com/drive/1_9wesHYkAMBjt2_87J2ii5cIffwkIBVn" class="project__link full-width">
                         <i aria-hidden="true" class="link__icon fas fa-eye"></i>
                         <span class="link__text">View</span>
                     </a>
